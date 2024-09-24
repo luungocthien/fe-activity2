@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import SingleCounter from './SingleCounter';  // Import the SingleCounter component
+import './App.css';  // Import styles for the app
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <SingleCounter />
+      <SingleCounter />
+      <SingleCounter />
     </div>
   );
-}
+};
 
 export default App;
